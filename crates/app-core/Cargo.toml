@@ -1,0 +1,11 @@
+[package]
+name = "rust-ide-app-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+tokio.workspace = true
+thiserror.workspace = true
+rust-ide-shared = { path = "../shared" }
