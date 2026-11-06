@@ -1,5 +1,5 @@
 [package]
-name = "rust-ide-language-service"
+name = "de-pinna-language-service"
 version.workspace = true
 edition.workspace = true
 license.workspace = true

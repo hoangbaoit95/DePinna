@@ -1,5 +1,5 @@
 [package]
-name = "rust-ide-terminal"
+name = "de-pinna-terminal"
 version.workspace = true
 edition.workspace = true
 license.workspace = true

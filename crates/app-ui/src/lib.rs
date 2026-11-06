@@ -7,7 +7,7 @@ use iced::{Alignment, Element, Font, Length, Task, Theme};
 pub fn run() -> iced::Result {
     iced::application(App::default, update, view)
         .title("Rust IDE")
-        .theme(|_| Theme::Dark)
+        .theme(|_: &App| Theme::Dark)
         .window_size(iced::Size::new(1440.0, 900.0))
         .run()
 }
@@ -57,7 +57,7 @@ fn update(app: &mut App, message: Message) -> Task<Message> {
 fn view(app: &App) -> Element<'_, Message> {
     let toolbar = row![
         text("RUST IDE").size(16),
-        text("  Workspace: rust-ide-template").size(13),
+        text("  Workspace: de-pinna-template").size(13),
         iced::widget::Space::new().width(Length::Fill),
         button(if app.show_terminal { "Hide Terminal" } else { "Show Terminal" })
             .on_press(Message::ToggleTerminal),
@@ -89,7 +89,7 @@ fn view(app: &App) -> Element<'_, Message> {
     .height(Length::Fill);
 
     // Iced's TextEditor is used only as an initial editable prototype.
-    // Replace it with a custom virtualized widget backed by rust-ide-editor-core.
+    // Replace it with a custom virtualized widget backed by de-pinna-editor-core.
     let editor = container(
         column![
             row![
@@ -116,7 +116,7 @@ fn view(app: &App) -> Element<'_, Message> {
             container(
                 column![
                     text("TERMINAL").size(12),
-                    text("PTY sessions will be hosted by rust-ide-terminal.")
+                    text("PTY sessions will be hosted by de-pinna-terminal.")
                         .font(Font::MONOSPACE)
                         .size(13),
                 ]

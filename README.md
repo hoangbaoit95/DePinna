@@ -48,7 +48,7 @@ The included `rust-toolchain.toml` selects stable and installs `rustfmt` and `cl
 From the repository root:
 
 ```powershell
-cargo run -p rust-ide
+cargo run -p de-pinna
 ```
 
 The initial window is an Iced shell with a project sidebar, an editable Iced `TextEditor` prototype, and a toggleable terminal placeholder. The built-in widget is only a bootstrap; it is not the intended large-file/IDE editor engine.

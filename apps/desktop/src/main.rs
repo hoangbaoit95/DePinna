@@ -7,6 +7,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .init();
 
     tracing::info!("Starting Rust IDE");
-    rust_ide_ui::run()?;
+    de_pinna_ui::run()?;
     Ok(())
 }

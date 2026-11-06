@@ -1,5 +1,5 @@
 [package]
-name = "rust-ide-syntax"
+name = "de-pinna-syntax"
 version.workspace = true
 edition.workspace = true
 license.workspace = true

@@ -1,11 +1,11 @@
 [package]
-name = "rust-ide"
+name = "de-pinna"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
 rust-version.workspace = true
 
 [dependencies]
-rust-ide-ui = { path = "../../crates/app-ui" }
+de-pinna-ui = { path = "../../crates/app-ui" }
 tracing.workspace = true
 tracing-subscriber.workspace = true

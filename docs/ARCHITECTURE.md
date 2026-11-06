@@ -23,7 +23,7 @@ Iced Message
                -> state update + render
 ```
 
-`rust-ide-shared` owns cross-layer IDs and command/event DTOs. `rust-ide-app-core` owns the dispatcher/runtime. UI code should not spawn shell processes, parse LSP packets, or access Git repositories directly.
+`de-pinna-shared` owns cross-layer IDs and command/event DTOs. `de-pinna-app-core` owns the dispatcher/runtime. UI code should not spawn shell processes, parse LSP packets, or access Git repositories directly.
 
 ## Threading policy
 
